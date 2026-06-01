@@ -2,17 +2,17 @@ import React from 'react';
 
 
 function SubmitButton (){
-    const handleMouseEnter = () => {
-        console.log("Mouse entered the button area.");
+    const handleEnter = () => {
+        console.log("Mouse entering");
     };
-    const handleMouseLeave = () => {
-        console.log("Mouse left the button area.");
+    const handleLeave = () => {
+        console.log("Mouse exiting");
     };
     return(
         <button
         type="button"
-        onMouseEnter={handleMoueEnter}
-        onMouseLeave={handleMouseLeave}
+        onMouseEnter={handleEnter}
+        onMouseLeave={handleLeave}
         >
             submit password{/* Text must exactly match*/}
         </button>
