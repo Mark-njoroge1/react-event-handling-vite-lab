@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
+function PasswordInput() {
+  function handleChange() {
+    console.log("Entering password...");
+  }
 
-function PasswordInput (){
-    const [password, setPassword] = useState('');
-    const handleInputChange = (e) => {
-        setPassword(e.target.value);
-        console.log("User is typing...");
-    };
-    return(
-        <input
-           type="password"
-           value={password}
-           onChange={handleInputChange}
-           placeholder="Enter your password"
-        />
-    );
+  return (
+    <input
+      type="password"
+      onChange={handleChange}
+    />
+  );
 }
+
 export default PasswordInput;
